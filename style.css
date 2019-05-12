@@ -1,0 +1,156 @@
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-size: 14px;
+	font-family: "Open Sans", sans-serif;
+	color: #000;
+	font-weight: 400;
+}
+ul, ol {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	color: #DE002B;
+}
+.wrapper {
+
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 100%;
+}
+.bold {
+	font-weight: bold;
+}
+/* header */
+.top_header_inner {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.logo {
+	width: 176px;
+}
+.header_info {
+	width: 275px;
+	padding-left: 10px;
+}
+.header_search {
+	flex: 1;
+	display: flex;
+}
+.header_control {
+	width: 280px;
+	display: flex;
+	flex-direction: row;
+	font-size: 12px;
+	color: #CF0028;
+	line-height: 16px;
+	align-items: center;
+}
+.header_info_toggle {
+	position: relative;
+}
+.header_info_toggle:hover {
+	cursor: pointer;
+}
+.header_info_toggle:after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 6px;
+    background-image: url(./img/header_arrow_down.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 23px;
+    bottom: 5px;
+}
+.header_info_toggle span {
+	color: #1E1E1E;
+	line-height: 17px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.header_info_toggle p {
+	color: #1E1E1E;
+	font-size: 12px;
+	margin: 0;
+}
+.search_block {
+	width: 100%;
+	padding-right: 25px;
+}
+.search_area {
+	padding: 10px 14px;
+	background-color: #F5F5F5;
+	border: 1px solid #E7E7E7;
+	color: #000;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 16px;
+	border-radius: 30px;
+	width: 100%;
+	outline: none;
+}
+.header_log {
+	display: flex;
+	flex-direction: row;
+	padding-right: 15px;
+	align-items: center;
+}
+.header_login {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.header_login span {
+	padding-right: 8px;
+}
+.header_login_img {
+	padding-right: 10px;
+}
+.header_reg {
+	padding-left: 10px;
+}
+.header_cart a {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.header_cart_img {
+	padding-right: 10px;
+}
+/* bottom header */
+.header_menu_inner {
+	background-color: #DE002B;
+}
+.header_menu_inner a {
+	color: #fff;
+}
+.header_menu_inner ul {
+	display: flex;
+	flex-direction: row;
+}
+.header_menu_inner ul li a {
+	display: flex;
+	padding: 17px 15px;
+	font-weight: bold;
+}
+.header_menu_inner ul li a:hover {
+	background-color: #c30228;
+}
+.header_menu_dropdown_burger {
+	padding-right: 10px;
+}
+.header_menu_dropdown {
+	width: 300px;
+}
