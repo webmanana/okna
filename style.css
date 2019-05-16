@@ -350,6 +350,9 @@ a {
    margin-left: auto;
    margin-right: auto;
 }
+.slider_inner {
+	position: relative;
+}
 .slider_content {
 	width: 100%;
 	height: 100%;
@@ -357,6 +360,28 @@ a {
 	margin-right: 0;
 	padding-left: 0;
 	padding-right: 0;
+}
+.arrow_left {
+    display: flex;
+    width: 21px;
+    height: 26px;
+    position: absolute;
+    left: 8px;
+    top: 40%;
+    z-index: 11;
+	align-items: center;
+    justify-content: center;
+}
+.arrow_right {
+    display: flex;
+    width: 21px;
+    height: 26px;
+    position: absolute;
+    right: 8px;
+    top: 40%;
+    z-index: 11;
+    align-items: center;
+    justify-content: center;
 }
 .slide {
 	height: 550px;
@@ -489,7 +514,6 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 .main_catalog_img {
 	padding-bottom: 12px;
@@ -962,6 +986,22 @@ a {
 	.header_center {
 		padding-top: 51px;
 	}
+	.header_info_toggle:after {
+	    content: '';
+	    display: block;
+	    width: 14px;
+	    height: 14px;
+	    background-image: url(./img/header_arrow_down.png);
+	    background-repeat: no-repeat;
+	    position: absolute;
+	    right: 2px;
+	    bottom: 12px;
+	    border: 1px solid #ededed;
+	    /* align-items: center; */
+	    /* justify-content: center; */
+	    background-position: center;
+	    border-radius: 50%;
+	}
 	.burger {
 		width: 50px;
 		height: 50px;
@@ -1104,6 +1144,13 @@ a {
 	    top: -10px;
 	    right: -1px;
 	}
+	.raschet_title h2 {
+		font-size: 16px;
+		line-height: normal;
+	}
+	.search_block {
+		padding-right: 0;
+	}
 }
 @media (max-width: 568px) {
 	.slide {
@@ -1136,9 +1183,16 @@ a {
 		align-items: center;
 		justify-content: center;
 	}
+	.header_mobile_menu ul li a {
+		padding: 14px;
+	}
 	.main_catalog_block span {
 		font-size: 12px;
 		line-height: 16px;
+	}
+	.header_mobile_menu .header_menu_dropdown_1:after, .header_mobile_menu .header_menu_dropdown_2:after {
+		top: 20px;
+    	right: 10px;
 	}
 	.main_catalog_img img {
 		max-width: 100%;
@@ -1195,6 +1249,6 @@ a {
 		margin-left: 0;
 		margin-right: 0;
 		margin-bottom: 15px;
-		width: 320px;
+		width: 100%;
 	}
 }
