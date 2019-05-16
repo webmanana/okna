@@ -163,7 +163,7 @@ a {
 /* modal */
 .header_modal {
 	padding: 18px 30px;
-	width: 400px;
+	max-width: 400px;
 }
 .header_modal_content {
 	display: flex;
@@ -1084,6 +1084,25 @@ a {
 	.advan_block span {
 		flex: 1;
 		font-size: 12px;
+	}
+	.service {
+		padding-top: 20px;
+		padding-bottom: 30px;
+	}
+	.header_cart_mobile a span {
+		position: absolute;
+	    color: #6C6C6C;
+	    font-size: 10px;
+	    height: 22px;
+	    width: 22px;
+	    border: 1px solid #E7E7E7;
+	    background: #F5F5F5;
+	    border-radius: 50%;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    top: -10px;
+	    right: -1px;
 	}
 }
 @media (max-width: 568px) {
