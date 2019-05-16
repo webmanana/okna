@@ -17,7 +17,32 @@
 	<div class="wrapper">
 		<header>
 			<div class="header_wrap">
-				<div class="container">
+				<div class="top_mobile_inner">
+					<a class="burger" data-toggle="offCanvas" href="#"><img src="img/burger.png" alt=""></a>
+					<div class="top_mobile_content">
+						<div class="header_log">
+							<a href="#" class="header_login" data-open="exampleModal1">
+								<div class="header_login_img">
+									<img src="img/login.png" alt="">
+								</div>
+								<span>Вход</span>
+							</a>
+							<span>|</span>
+							<a href="#" class="header_reg">
+								<span>Регистрация</span>
+							</a>
+						</div>
+						<div class="header_cart_mobile">
+							<a href="#">
+								<div class="header_cart_img">
+									<img src="img/cart.png" alt="">
+								</div>
+								<span>0</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="container header_center">
 					<div class="top_header_inner">
 						<div class="logo">
 							<a href="#"><img src="img/logo.png" alt="Окна"></a>
@@ -50,7 +75,7 @@
 						</div>
 						<div class="header_control">
 							<div class="header_log">
-								<a href="#" class="header_login">
+								<a href="#" class="header_login" data-open="exampleModal1">
 									<div class="header_login_img">
 										<img src="img/login.png" alt="">
 									</div>
@@ -71,18 +96,31 @@
 							</div>
 						</div>
 					</div><!--top header end-->
+					<div class="reveal header_modal" id="exampleModal1" data-reveal>
+						<div class="header_modal_content">
+							<span>Вход в систему</span>
+							<input class="header_modal_mail" type="text" name="mail" value="" placeholder="E-Mail">
+							<input class="header_modal_pass" type="text" name="password" value="" placeholder="Пароль">
+							<a href="#" class="header_modal_why">Забыли пароль</a>
+							<input class="header_modal_submit" type="submit" name="login" value="Войти">
+							<a href="#" class="header_modal_reg">Регистрация</a>
+						</div>
+						<button class="close-button" data-close aria-label="Close modal" type="button">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
 					<div class="bottom_header_inner">
 						<div class="header_menu_inner">
 							<ul>
 								<li>
-									<a href="#" class="header_menu_dropdown" data-toggle="header_catalog_menu">
+									<a href="#" class="header_menu_dropdown_1" data-toggle="header_catalog_menu">
 										<div class="header_menu_dropdown_burger">
 											<img src="img/catalog_burger.png" alt="">
 										</div>
 										Каталог товаров
 									</a>
 								</li>
-								<li><a href="#" class="header_menu_dropdown" data-toggle="header_catalog_menu_2">Услуги</a></li>
+								<li><a href="#" class="header_menu_dropdown_2" data-toggle="header_catalog_menu_2">Услуги</a></li>
 								<li><a href="#">Оплата и доставка</a></li>
 								<li><a href="#">Информация</a></li>
 								<li><a href="#">Работы</a></li>
@@ -196,6 +234,131 @@
 						</div>
 					</div><!--bottom header end-->
 				</div>
+				<div class="bottom_header_mobile">
+					<div class="header_mobile_menu">
+						<ul>
+							<li>
+								<a href="#" class="header_menu_dropdown_1" data-toggle="mobile_menu_1">
+									<div class="header_menu_dropdown_burger">
+										<img src="img/catalog_burger.png" alt="">
+									</div>
+									Каталог товаров
+								</a>
+							</li>
+							<li><a href="#" class="header_menu_dropdown_2" data-toggle="mobile_menu_2">Услуги</a></li>
+						</ul>
+					</div>
+					<div class="dropdown-pane mobile_menu_inner" id="mobile_menu_1" data-dropdown data-auto-focus="true">
+						<div class="mobile_menu_content">
+							<ul class="vertical menu drilldown" data-drilldown>
+								<li>
+									<a href="#">Окна из ПВХ</a>
+									<ul class="menu vertical nested">
+										<li>
+											<a href="#">Two A</a>
+											<ul class="menu vertical nested">
+												<li><a href="#">Two A</a></li>
+												<li><a href="#">Two B</a></li>
+												<li><a href="#">Two C</a></li>
+												<li><a href="#">Two D</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Two B</a></li>
+										<li><a href="#">Two C</a></li>
+										<li><a href="#">Two D</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Двери из ПВХ</a>
+									<ul class="menu vertical nested">
+										<li><a href="#">Two A</a></li>
+										<li><a href="#">Two B</a></li>
+										<li><a href="#">Two C</a></li>
+										<li><a href="#">Two D</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Алюминиевый профиль</a>
+									<ul class="menu vertical nested">
+										<li><a href="#">Two A</a></li>
+										<li><a href="#">Two B</a></li>
+										<li><a href="#">Two C</a></li>
+										<li><a href="#">Two D</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Пластиковые откосы, подоконники</a>
+									<ul class="menu vertical nested">
+										<li><a href="#">Two A</a></li>
+										<li><a href="#">Two B</a></li>
+										<li><a href="#">Two C</a></li>
+										<li><a href="#">Two D</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Монтажные товары</a>
+									<ul class="menu vertical nested">
+										<li><a href="#">Two A</a></li>
+										<li><a href="#">Two B</a></li>
+										<li><a href="#">Two C</a></li>
+										<li><a href="#">Two D</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Комплектующие</a>
+									<ul class="menu vertical nested">
+										<li><a href="#">Two A</a></li>
+										<li><a href="#">Two B</a></li>
+										<li><a href="#">Two C</a></li>
+										<li><a href="#">Two D</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Стекло</a>
+									<ul class="menu vertical nested">
+										<li><a href="#">Two A</a></li>
+										<li><a href="#">Two B</a></li>
+										<li><a href="#">Two C</a></li>
+										<li><a href="#">Two D</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="dropdown-pane mobile_menu_inner" id="mobile_menu_2" data-dropdown data-auto-focus="true">
+						<div class="mobile_menu_content">
+							<ul class="vertical menu drilldown" data-drilldown>
+								<li>
+									<a href="#">Окна и двери</a>
+									<ul class="menu vertical nested">
+										<li><a href="#">Two A</a></li>
+										<li><a href="#">Two B</a></li>
+										<li><a href="#">Two C</a></li>
+										<li><a href="#">Two D</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Перегородки</a>
+									<ul class="menu vertical nested">
+										<li><a href="#">Two A</a></li>
+										<li><a href="#">Two B</a></li>
+										<li><a href="#">Two C</a></li>
+										<li><a href="#">Two D</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Ремонт</a>
+									<ul class="menu vertical nested">
+										<li><a href="#">Two A</a></li>
+										<li><a href="#">Two B</a></li>
+										<li><a href="#">Two C</a></li>
+										<li><a href="#">Two D</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 		</header>
 		<section id="slide">
@@ -233,19 +396,19 @@
 						<div class="advan_img">
 							<img src="img/advan_block_1.png" alt="">
 						</div>
-						<span>Удобная и быстрая<br>доставка</span>
+						<span>Удобная и быстрая доставка</span>
 					</div>
 					<div class="advan_block">
 						<div class="advan_img">
 							<img src="img/advan_block_2.png" alt="">
 						</div>
-						<span>Высокотехнологичное<br>производство</span>
+						<span>Высокотехнологичное производство</span>
 					</div>
 					<div class="advan_block">
 						<div class="advan_img">
 							<img src="img/advan_block_3.png" alt="">
 						</div>
-						<span>ПВХ-конструкции<br>любой сложности</span>
+						<span>ПВХ-конструкции любой сложности</span>
 					</div>
 				</div>
 			</div>
@@ -313,94 +476,260 @@
 		<section class="raschet">
 			<div class="raschet_wrap">
 				<div class="container">
-					<div class="raschet_inner">
-						<div class="raschet_title">
-							<h2>Расчет стоимости откоса окна</h2>
+					<div class="raschet_inner_container">
+						<div class="raschet_inner">
+							<div class="raschet_title">
+								<h2>Расчет стоимости откоса окна</h2>
+							</div>
+							<form class="" action="index.html" method="post">
+								<div class="raschet_content">
+									<div class="raschet_block">
+										<span>Высота:</span>
+										<div class="raschet_button">
+											<div class="button_inner">
+												<input id="height_1" type="radio" name="height" value="1" checked>
+												<label for="height_1">1,5 м</label>
+											</div>
+											<div class="button_inner">
+												<input id="height_2" type="radio" name="height" value="2">
+												<label for="height_2">1,8 м</label>
+											</div>
+											<div class="button_inner">
+												<input id="height_3" type="radio" name="height" value="3">
+												<label for="height_3">2 м</label>
+											</div>
+											<div class="button_inner">
+												<input id="height_4" type="radio" name="height" value="4">
+												<label for="height_4">2,4 м</label>
+											</div>
+											<div class="button_inner">
+												<input id="height_5" type="radio" name="height" value="5">
+												<label for="height_5">3 м</label>
+											</div>
+										</div>
+									</div>
+									<div class="raschet_block">
+										<span>Длина:</span>
+										<div class="raschet_button">
+											<div class="button_inner">
+												<input id="width_1" type="radio" name="width" value="1" checked>
+												<label for="width_1">1,5 м</label>
+											</div>
+											<div class="button_inner">
+												<input id="width_2" type="radio" name="width" value="2">
+												<label for="width_2">1,8 м</label>
+											</div>
+											<div class="button_inner">
+												<input id="width_3" type="radio" name="width" value="3">
+												<label for="width_3">2 м</label>
+											</div>
+											<div class="button_inner">
+												<input id="width_4" type="radio" name="width" value="4">
+												<label for="width_4">2,4 м</label>
+											</div>
+											<div class="button_inner">
+												<input id="width_5" type="radio" name="width" value="5">
+												<label for="width_5">3 м</label>
+											</div>
+										</div>
+									</div>
+									<div class="raschet_block">
+										<span>Откос:</span>
+										<div class="raschet_button">
+											<div class="button_inner">
+												<input id="otkos_1" type="radio" name="otkos" value="1" checked>
+												<label for="otkos_1">до 600 мм</label>
+											</div>
+											<div class="button_inner">
+												<input id="otkos_2" type="radio" name="otkos" value="2">
+												<label for="otkos_2">до 450 мм</label>
+											</div>
+											<div class="button_inner">
+												<input id="otkos_3" type="radio" name="otkos" value="3">
+												<label for="otkos_3">до 300 мм</label>
+											</div>
+											<div class="button_inner">
+												<input id="otkos_4" type="radio" name="otkos" value="4">
+												<label for="otkos_4">до 225 мм</label>
+											</div>
+										</div>
+									</div>
+									<div class="raschet_info">
+										<div class="raschet_info_block">
+											<span>Ваше имя:</span>
+											<input type="text" name="name" value="">
+										</div>
+										<div class="raschet_info_block">
+											<span>Телефон:</span>
+											<input type="text" name="phone" value="" placeholder="+7">
+										</div>
+										<div class="raschet_info_button">
+											<input type="submit" name="" value="Получить расчет">
+										</div>
+									</div>
+									<div class="raschet_check">
+										<div class="raschet_check_block">
+											<label for="check">
+												<div class="checkbox_block">
+													<input id="check" type="checkbox" name="" value="">
+													<span class="checkmark"></span>
+												</div>
+											    <div class="checkbox_text">
+											    	Согласен (-на) на обработку персональных данных
+											    </div>
+											</label>
+										</div>
+									</div>
+								</div>
+							</form>
 						</div>
-						<div class="raschet_content">
-							<div class="raschet_block">
-								<span>Высота:</span>
-								<div class="raschet_button">
-									<div class="button_inner">
-										<input id="height_1" type="radio" name="height" value="1" checked>
-										<label for="height_1">1,5 м</label>
-									</div>
-									<div class="button_inner">
-										<input id="height_2" type="radio" name="height" value="2">
-										<label for="height_2">1,8 м</label>
-									</div>
-									<div class="button_inner">
-										<input id="height_3" type="radio" name="height" value="3">
-										<label for="height_3">2 м</label>
-									</div>
-									<div class="button_inner">
-										<input id="height_4" type="radio" name="height" value="4">
-										<label for="height_4">2,4 м</label>
-									</div>
-									<div class="button_inner">
-										<input id="height_5" type="radio" name="height" value="5">
-										<label for="height_5">3 м</label>
-									</div>
-								</div>
-							</div>
-							<div class="raschet_block">
-								<span>Длина:</span>
-								<div class="raschet_button">
-									<div class="button_inner">
-										<input id="width_1" type="radio" name="width" value="1" checked>
-										<label for="width_1">1,5 м</label>
-									</div>
-									<div class="button_inner">
-										<input id="width_2" type="radio" name="width" value="2">
-										<label for="width_2">1,8 м</label>
-									</div>
-									<div class="button_inner">
-										<input id="width_3" type="radio" name="width" value="3">
-										<label for="width_3">2 м</label>
-									</div>
-									<div class="button_inner">
-										<input id="width_4" type="radio" name="width" value="4">
-										<label for="width_4">2,4 м</label>
-									</div>
-									<div class="button_inner">
-										<input id="width_5" type="radio" name="width" value="5">
-										<label for="width_5">3 м</label>
-									</div>
-								</div>
-							</div>
-							<div class="raschet_block">
-								<span>Откос:</span>
-								<div class="raschet_button">
-									<div class="button_inner">
-										<input id="otkos_1" type="radio" name="otkos" value="1" checked>
-										<label for="otkos_1">до 600 мм</label>
-									</div>
-									<div class="button_inner">
-										<input id="otkos_2" type="radio" name="otkos" value="2">
-										<label for="otkos_2">до 450 мм</label>
-									</div>
-									<div class="button_inner">
-										<input id="otkos_3" type="radio" name="otkos" value="3">
-										<label for="otkos_3">до 300 мм</label>
-									</div>
-									<div class="button_inner">
-										<input id="otkos_4" type="radio" name="otkos" value="4">
-										<label for="otkos_4">до 225 мм</label>
-									</div>
-								</div>
+						<div class="raschet_img_inner">
+							<div class="raschet_img">
+								<img src="img/raschet.png" alt="">
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+		<section class="service">
+			<div class="container">
+				<div class="service_inner">
+					<div class="section_title">
+						<h2>Услуги</h2>
+					</div>
+					<div class="service_content">
+						<div class="service_block">
+							<div class="service_img">
+								<img src="img/service_1.jpg" alt="">
+							</div>
+							<h3>Окна и двери</h3>
+							<ul>
+								<li><a href="#">Изготовление окон и дверей</a></li>
+								<li><a href="#">Установка окон и дверей</a></li>
+								<li><a href="#">Установка откосов и подоконников</a></li>
+								<li><a href="#">Установка сеток</a></li>
+							</ul>
+						</div>
+						<div class="service_block">
+							<div class="service_img">
+								<img src="img/service_2.jpg" alt="">
+							</div>
+							<h3>Перегородки</h3>
+							<ul>
+								<li><a href="#">Изготовление перегородок</a></li>
+								<li><a href="#">Установка перегородок</a></li>
+								<li><a href="#">Лоджия и балконы</a></li>
+							</ul>
+						</div>
+						<div class="service_block">
+							<div class="service_img">
+								<img src="img/service_3.jpg" alt="">
+							</div>
+							<h3>Ремонт</h3>
+							<ul>
+								<li><a href="#">Замена стеклопакета</a></li>
+								<li><a href="#">Замена резинок</a></li>
+								<li><a href="#">Регулировка изделий из ПВХ</a></li>
+								<li><a href="#">Перепенка изделий из ПВХ</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer_wrap">
+			<div class="container">
+				<div class="footer_inner">
+					<div class="footer_block">
+						<span class="footer_title">Каталог товаров</span>
+						<ul>
+							<li><a href="#">Окна из ПВХ</a></li>
+							<li><a href="#">Двери из ПВХ</a></li>
+							<li><a href="#">Алюминиевый профиль</a></li>
+							<li><a href="#">Пластиковые откосы, подоконники</a></li>
+							<li><a href="#">Монтажные товары</a></li>
+							<li><a href="#">Комплектующие</a></li>
+							<li><a href="#">Стекло</a></li>
+						</ul>
+					</div>
+					<div class="footer_block">
+						<span class="footer_title">Услуги</span>
+						<ul>
+							<li><span class="footer_menu_title">Окна и двери</span></li>
+							<li><a href="#">Изготовление окон и дверей</a></li>
+							<li><a href="#">Установка окон и дверей</a></li>
+							<li><a href="#">Установка откосов и подоконников</a></li>
+							<li><a href="#">Установка сеток</a></li>
+						</ul>
+					</div>
+					<div class="footer_block">
+						<span class="footer_title"></span>
+						<ul>
+							<li><span class="footer_menu_title">Перегородки</span></li>
+							<li><a href="#">Изготовление перегородок</a></li>
+							<li><a href="#">Установка перегородок</a></li>
+						</ul>
+					</div>
+					<div class="footer_block">
+						<span class="footer_title"></span>
+						<ul>
+							<li><span class="footer_menu_title">Ремонт</span></li>
+							<li><a href="#">Замена стеклопакета</a></li>
+							<li><a href="#">Замена резинок</a></li>
+							<li><a href="#">Регулировка изделий из ПВХ</a></li>
+							<li><a href="#">Перепенка изделий из ПВХ</a></li>
+						</ul>
+					</div>
+					<div class="footer_block">
+						<span class="footer_title">О магазине</span>
+						<ul>
+							<li><a href="#">Оплата и доставка</a></li>
+							<li><a href="#">Информация</a></li>
+							<li><a href="#">Работы</a></li>
+							<li><a href="#">Партнёры</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer_bottom">
+					<div class="footer_bottom_block bottom_block_1">
+						<span>Главный магазин: ТВЦ “Тамара” ул. Дзержинского 52/2, оф. 19<br>
+						Магазин: Жорницкого 33/1, пав. 107А<br>
+						Склад: ул. Степанова, 12</span>
+					</div>
+					<div class="footer_bottom_block bottom_block_2">
+						<span>+ 7 (4112) 24-16-16<br>
+						+ 7 (4112) 71-33-92<br>
+						+ 7 (4112) 25-61-61</span>
+					</div>
+					<div class="footer_bottom_block bottom_block_3">
+						<p>2019 © Окна К. ИП Косолапов В. Н
+Продажа и установка пластиковых окон и дверей в Якутске</p>
+					</div>
+				</div>
+				<div class="footer_mobile">
+					<div class="footer_mobile_content">
+						<span>2019 © Окна К. ИП Косолапов В. Н<br>
+Продажа и установка пластиковых окон
+и дверей в Якутске</span>
+					</div>
+				</div>
+			</div>
+		</footer>
 		<div class="header_canvas">
 			<div class="off-canvas position-left" id="offCanvas" data-off-canvas>
 				<ul class="vertical menu">
-					<li><a href="#">Главная</a></li>
+					<li>
+						<a href="#" data-toggle="offCanvas"><img src="img/close.png" alt=""></a>
+						<a href="tel:+74112241616">+ 7 (4112) 24-16-16</a>
+					</li>
+					<li><a href="#" class="active">Каталог товаров</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Оплата и доставка</a></li>
 					<li><a href="#">Информация</a></li>
-					<li><a href="#">Мои данные</a></li>
-					<li><a href="#">История заказов</a></li>
+					<li><a href="#">Работы</a></li>
+					<li><a href="#">Партнёры</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
 			</div>
@@ -419,6 +748,17 @@
 			focusOnSelect: true,
 			arrows: false,
 			dots: true,
+			responsive: [
+		    {
+		      breakpoint: 568,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+				dots: false,
+				arrows: true
+		      }
+		    }
+		  ]
 		});
 		</script>
 	</div>
