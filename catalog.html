@@ -373,6 +373,7 @@
 					</div>
 					<div class="filter_section">
 						<div class="filter_sort">
+							<span class="filter_sort_text">Сортировать:</span>
 							<a href="#" class="filter_sort_pop">По популярности</a>
 							<a href="#" class="filter_sort_abc">По алфавиту</a>
 							<a href="#" class="filter_sort_price">По цене (по возрастания)</a>
@@ -383,15 +384,23 @@
 						</div>
 						<div class="filter_mode">
 							<span>Режим отображения</span>
-							<a href="#" class="filter_mode_tiles">
-								<object	type="image/svg+xml" data="img/tiles.svg">
-									<img src="img/tiles.png">
-								</object>
+							<a href="#" class="filter_mode_tiles active">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect width="7" height="7" rx="1" fill="#DE002B"/>
+									<rect x="9" width="7" height="7" rx="1" fill="#DE002B"/>
+									<rect y="9" width="7" height="7" rx="1" fill="#DE002B"/>
+									<rect x="9" y="9" width="7" height="7" rx="1" fill="#DE002B"/>
+								</svg>
 							</a>
 							<a href="#" class="filter_mode_list">
-								<object	type="image/svg+xml" data="img/list.svg">
-									<img src="img/list.png">
-								</object>
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0 2C0 0.895431 0.895431 0 2 0C3.10457 0 4 0.895431 4 2C4 3.10457 3.10457 4 2 4C0.895431 4 0 3.10457 0 2Z" fill="#9F9F9F"/>
+									<rect x="6" width="10" height="4" rx="1" fill="#9F9F9F"/>
+									<path d="M0 8C0 6.89543 0.895431 6 2 6C3.10457 6 4 6.89543 4 8C4 9.10457 3.10457 10 2 10C0.895431 10 0 9.10457 0 8Z" fill="#9F9F9F"/>
+									<rect x="6" y="6" width="10" height="4" rx="1" fill="#9F9F9F"/>
+									<path d="M0 14C0 12.8954 0.895431 12 2 12C3.10457 12 4 12.8954 4 14C4 15.1046 3.10457 16 2 16C0.895431 16 0 15.1046 0 14Z" fill="#9F9F9F"/>
+									<rect x="6" y="12" width="10" height="4" rx="1" fill="#9F9F9F"/>
+								</svg>
 							</a>
 						</div>
 					</div>
@@ -509,48 +518,277 @@
 								<div class="catalog_element_title">
 									<h2>Все окна из ПВХ</h2>
 								</div>
-								<div class="catalog_element_content">
+								<div class="catalog_element_inner">
 									<div class="catalog_element_block_inner">
 										<div class="catalog_element_block">
-											<div class="catalog_element_meta_inner">
-												<a href="#" class="catalog_element_meta_like">
-													<object	type="image/svg+xml" data="img/like.svg">
-														<img src="img/like.png">
-													</object>
-												</a>
-												<a href="#" class="catalog_element_meta_compare">
-													<object	type="image/svg+xml" data="img/compare.svg">
-														<img src="img/compare.png">
-													</object>
-												</a>
-											</div>
-											<div class="catalog_element_img">
-												<img src="img/catalog_7.jpg" alt="">
-											</div>
-											<span class="catalog_element_cat"></span>
-											<h5>Однокамерный энергосберегающий стеклопакет Euroline 1600х1500</h5>
-											<div class="catalog_element_price_inner">
-												<span class="catalog_element_price">9 500 ₽</span>
-												<span class="catalog_element_col">В наличии</span>
-											</div>
-											<div class="catalog_element_cart">
-												<div class="input-group plus-minus-input">
-													<div class="input-group-button">
-														<button type="button" class="minus" data-quantity="minus" data-field="quantity">
-															<div class="minus_ico"></div>
-														</button>
-													</div>
-													<input class="input-group-field" type="number" name="quantity" min="0" value="0">
-													<div class="input-group-button">
-														<button type="button" class="plus" data-quantity="plus" data-field="quantity">
-															<div class="plus_ico"></div>
-														</button>
-													</div>
+											<div class="catalog_element_content">
+												<div class="catalog_element_meta_inner">
+													<a href="#" class="catalog_element_meta_like">
+														<img src="img/like.svg" alt="">
+													</a>
+													<a href="#" class="catalog_element_meta_compare">
+														<img src="img/compare.svg" alt="">
+													</a>
 												</div>
-												<a href="#">В корзину</a>
+												<div class="catalog_element_img">
+													<img src="img/catalog_7.jpg" alt="">
+												</div>
+												<a href="#" class="catalog_element_cat">Двухстворчатые окна</a>
+												<a href="#"><h5>Однокамерный энергосберегающий стеклопакет Euroline 1600х1500</h5></a>
+												<div class="catalog_element_price_inner">
+													<span class="catalog_element_price">9 500 ₽</span>
+													<span class="catalog_element_col_not">Нет в наличии</span>
+												</div>
+												<div class="catalog_element_cart">
+													<a href="#" class="catalog_element_cart_url">Подробнее</a>
+													<div class="input-group plus-minus-input">
+														<div class="input-group-button">
+															<button type="button" class="minus" data-quantity="minus" data-field="quantity">
+																<div class="minus_ico"></div>
+															</button>
+														</div>
+														<input class="input-group-field" type="number" name="quantity" min="0" value="0">
+														<div class="input-group-button">
+															<button type="button" class="plus" data-quantity="plus" data-field="quantity">
+																<div class="plus_ico"></div>
+															</button>
+														</div>
+													</div>
+													<a href="#" class="add_cart">
+														В корзину
+														<img src="img/add_cart.svg" alt="">
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="catalog_element_block">
+											<div class="catalog_element_content">
+												<div class="catalog_element_meta_inner">
+													<a href="#" class="catalog_element_meta_like">
+														<img src="img/like.svg" alt="">
+													</a>
+													<a href="#" class="catalog_element_meta_compare">
+														<img src="img/compare.svg" alt="">
+													</a>
+												</div>
+												<div class="catalog_element_img">
+													<img src="img/catalog_7.jpg" alt="">
+												</div>
+												<a href="#" class="catalog_element_cat">Двухстворчатые окна</a>
+												<a href="#"><h5>Однокамерный энергосберегающий стеклопакет Euroline 1600х1500</h5></a>
+												<div class="catalog_element_price_inner">
+													<span class="catalog_element_price">9 500 ₽</span>
+													<span class="catalog_element_col">В наличии</span>
+												</div>
+												<div class="catalog_element_cart">
+													<a href="#" class="catalog_element_cart_url">Подробнее</a>
+													<div class="input-group plus-minus-input">
+														<div class="input-group-button">
+															<button type="button" class="minus" data-quantity="minus" data-field="quantity">
+																<div class="minus_ico"></div>
+															</button>
+														</div>
+														<input class="input-group-field" type="number" name="quantity" min="0" value="0">
+														<div class="input-group-button">
+															<button type="button" class="plus" data-quantity="plus" data-field="quantity">
+																<div class="plus_ico"></div>
+															</button>
+														</div>
+													</div>
+													<a href="#" class="add_cart">
+														В корзину
+														<img src="img/add_cart.svg" alt="">
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="catalog_element_block">
+											<div class="catalog_element_content">
+												<div class="catalog_element_meta_inner">
+													<a href="#" class="catalog_element_meta_like">
+														<img src="img/like.svg" alt="">
+													</a>
+													<a href="#" class="catalog_element_meta_compare">
+														<img src="img/compare.svg" alt="">
+													</a>
+												</div>
+												<div class="catalog_element_img">
+													<img src="img/catalog_7.jpg" alt="">
+												</div>
+												<a href="#" class="catalog_element_cat">Двухстворчатые окна</a>
+												<a href="#"><h5>Однокамерный энергосберегающий стеклопакет Euroline 1600х1500</h5></a>
+												<div class="catalog_element_price_inner">
+													<span class="catalog_element_price">9 500 ₽</span>
+													<span class="catalog_element_col_not">Нет в наличии</span>
+												</div>
+												<div class="catalog_element_cart">
+													<a href="#" class="catalog_element_cart_url">Подробнее</a>
+													<div class="input-group plus-minus-input">
+														<div class="input-group-button">
+															<button type="button" class="minus" data-quantity="minus" data-field="quantity">
+																<div class="minus_ico"></div>
+															</button>
+														</div>
+														<input class="input-group-field" type="number" name="quantity" min="0" value="0">
+														<div class="input-group-button">
+															<button type="button" class="plus" data-quantity="plus" data-field="quantity">
+																<div class="plus_ico"></div>
+															</button>
+														</div>
+													</div>
+													<a href="#" class="add_cart">
+														В корзину
+														<img src="img/add_cart.svg" alt="">
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="catalog_element_block">
+											<div class="catalog_element_content">
+												<div class="catalog_element_meta_inner">
+													<a href="#" class="catalog_element_meta_like">
+														<img src="img/like.svg" alt="">
+													</a>
+													<a href="#" class="catalog_element_meta_compare">
+														<img src="img/compare.svg" alt="">
+													</a>
+												</div>
+												<div class="catalog_element_img">
+													<img src="img/catalog_7.jpg" alt="">
+												</div>
+												<a href="#" class="catalog_element_cat">Двухстворчатые окна</a>
+												<a href="#"><h5>Однокамерный энергосберегающий стеклопакет Euroline 1600х1500</h5></a>
+												<div class="catalog_element_price_inner">
+													<span class="catalog_element_price">9 500 ₽</span>
+													<span class="catalog_element_col">В наличии</span>
+												</div>
+												<div class="catalog_element_cart">
+													<a href="#" class="catalog_element_cart_url">Подробнее</a>
+													<div class="input-group plus-minus-input">
+														<div class="input-group-button">
+															<button type="button" class="minus" data-quantity="minus" data-field="quantity">
+																<div class="minus_ico"></div>
+															</button>
+														</div>
+														<input class="input-group-field" type="number" name="quantity" min="0" value="0">
+														<div class="input-group-button">
+															<button type="button" class="plus" data-quantity="plus" data-field="quantity">
+																<div class="plus_ico"></div>
+															</button>
+														</div>
+													</div>
+													<a href="#" class="add_cart">
+														В корзину
+														<img src="img/add_cart.svg" alt="">
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="catalog_element_block">
+											<div class="catalog_element_content">
+												<div class="catalog_element_meta_inner">
+													<a href="#" class="catalog_element_meta_like">
+														<img src="img/like.svg" alt="">
+													</a>
+													<a href="#" class="catalog_element_meta_compare">
+														<img src="img/compare.svg" alt="">
+													</a>
+												</div>
+												<div class="catalog_element_img">
+													<img src="img/catalog_7.jpg" alt="">
+												</div>
+												<a href="#" class="catalog_element_cat">Двухстворчатые окна</a>
+												<a href="#"><h5>Однокамерный энергосберегающий стеклопакет Euroline 1600х1500</h5></a>
+												<div class="catalog_element_price_inner">
+													<span class="catalog_element_price">9 500 ₽</span>
+													<span class="catalog_element_col_not">Нет в наличии</span>
+												</div>
+												<div class="catalog_element_cart">
+													<a href="#" class="catalog_element_cart_url">Подробнее</a>
+													<div class="input-group plus-minus-input">
+														<div class="input-group-button">
+															<button type="button" class="minus" data-quantity="minus" data-field="quantity">
+																<div class="minus_ico"></div>
+															</button>
+														</div>
+														<input class="input-group-field" type="number" name="quantity" min="0" value="0">
+														<div class="input-group-button">
+															<button type="button" class="plus" data-quantity="plus" data-field="quantity">
+																<div class="plus_ico"></div>
+															</button>
+														</div>
+													</div>
+													<a href="#" class="add_cart">
+														В корзину
+														<img src="img/add_cart.svg" alt="">
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="catalog_element_block">
+											<div class="catalog_element_content">
+												<div class="catalog_element_meta_inner">
+													<a href="#" class="catalog_element_meta_like">
+														<img src="img/like.svg" alt="">
+													</a>
+													<a href="#" class="catalog_element_meta_compare">
+														<img src="img/compare.svg" alt="">
+													</a>
+												</div>
+												<div class="catalog_element_img">
+													<img src="img/catalog_7.jpg" alt="">
+												</div>
+												<a href="#" class="catalog_element_cat">Двухстворчатые окна</a>
+												<a href="#"><h5>Однокамерный энергосберегающий стеклопакет Euroline 1600х1500</h5></a>
+												<div class="catalog_element_price_inner">
+													<span class="catalog_element_price">9 500 ₽</span>
+													<span class="catalog_element_col">В наличии</span>
+												</div>
+												<div class="catalog_element_cart">
+													<a href="#" class="catalog_element_cart_url">Подробнее</a>
+													<div class="input-group plus-minus-input">
+														<div class="input-group-button">
+															<button type="button" class="minus" data-quantity="minus" data-field="quantity">
+																<div class="minus_ico"></div>
+															</button>
+														</div>
+														<input class="input-group-field" type="number" name="quantity" min="0" value="0">
+														<div class="input-group-button">
+															<button type="button" class="plus" data-quantity="plus" data-field="quantity">
+																<div class="plus_ico"></div>
+															</button>
+														</div>
+													</div>
+													<a href="#" class="add_cart">
+														В корзину
+														<img src="img/add_cart.svg" alt="">
+													</a>
+												</div>
 											</div>
 										</div>
 									</div>
+								</div>
+							</div>
+							<div class="catalog_nav">
+								<div class="catalog_nav_inner">
+									<a href="#" class="catalog_nav_arrow_left">
+										<svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M7 13L1 7L7 1" stroke="#C9C9C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+									<ul class="catalog_nav_number">
+										<li><a href="#" class="active">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#">4</a></li>
+										<li><a href="#">...</a></li>
+										<li><a href="#">9</a></li>
+									</ul>
+									<a href="#" class="catalog_nav_arrow_left active">
+										<svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1 13L7 7L1 1" stroke="#242424" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -661,7 +899,70 @@
 		<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
 		<script src="vendor/jquery.maskedinput.js"></script>
 		<script type="text/javascript">
+		jQuery(document).ready(function(){
+			$('[data-quantity="plus"]').on("click",function(e){
+		        // Stop acting like a button
+		        e.preventDefault();
+		        // Get the field name
+		        fieldName = $(this).attr('data-field');
+		        // Get its current value
+		        var currentVal = parseInt($('input[name='+fieldName+']').val());
+		        // If is not undefined
+		        if (!isNaN(currentVal)) {
+		            // Increment
+		            $('input[name='+fieldName+']').val(currentVal + 1);
+		        } else {
+		            // Otherwise put a 0 there
+		            $('input[name='+fieldName+']').val(0);
+		        }
+		        if (currentVal == 0) {
+					$(this).parents(".plus-minus-input").find(".minus").removeClass("disabled");
+		        }
+		    });
+		    // This button will decrement the value till 0
+		    $('[data-quantity="minus"]').click(function(e) {
+		        // Stop acting like a button
+		        e.preventDefault();
+		        // Get the field name
+		        fieldName = $(this).attr('data-field');
+		        // Get its current value
+		        var currentVal = parseInt($('input[name='+fieldName+']').val());
 
+
+		        if (currentVal == 1) {
+					$(".minus").addClass("disabled");
+		        }
+		        // If it isn't undefined or its greater than 0
+		        if (!isNaN(currentVal) && currentVal > 1) {
+		            // Decrement one
+		            $('input[name='+fieldName+']').val(currentVal - 1);
+		        } else {
+		            // Otherwise put a 0 there
+		            $('input[name='+fieldName+']').val(0);
+		        }
+		    });
+		});
+		$('img[src$=".svg"]').each(function() {
+		    var $img = jQuery(this);
+		    var imgURL = $img.attr('src');
+		    var attributes = $img.prop("attributes");
+
+		    $.get(imgURL, function(data) {
+		      // Get the SVG tag, ignore the rest
+		      var $svg = jQuery(data).find('svg');
+
+		      // Remove any invalid XML tags
+		      $svg = $svg.removeAttr('xmlns:a');
+
+		      // Loop through IMG attributes and apply on SVG
+		      $.each(attributes, function() {
+		        $svg.attr(this.name, this.value);
+		      });
+
+		      // Replace IMG with SVG
+		      $img.replaceWith($svg);
+		    }, 'xml');
+		  });
 		</script>
 	</div>
 </body>
