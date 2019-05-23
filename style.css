@@ -1121,7 +1121,7 @@ a {
     transition: max-height 0.25s ease-in;
 	overflow: hidden;
 	margin-bottom: -70px;
-	z-index: 99;
+	z-index: 9;
 	background-color: #fff;
 }
 .catalog_element_content:hover .catalog_element_meta_inner {
@@ -1636,6 +1636,9 @@ input[type=number] {
 	line-height: 28px;
 	color: #242424;
 }
+.left_slide, .right_slide {
+	display: none;
+}
 @media (max-width: 1400px) {
 	.slide {
 		height: 450px;
@@ -1989,8 +1992,25 @@ input[type=number] {
 	.tovar_before_block {
 	    width: 33.333%;
 	}
+	.left_slide {
+	    position: absolute;
+	    left: -18px;
+	    top: 0;
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+	.right_slide {
+	    position: absolute;
+	    right: -18px;
+	    top: 0;
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
 	.tovar_gallery {
 		width: 100%;
+		position: relative;
 	}
 	.tovar_tabs .catalog_element_block {
 	    width: 50%;
@@ -2246,6 +2266,33 @@ input[type=number] {
 		overflow-y: hidden;
 		overflow-x: scroll;
 		-webkit-overflow-scrolling: touch;
+	}
+	.tovar_before_content span {
+		font-size: 14px;
+	}
+	.left_slide {
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	    height: 100%;
+	    display: flex;
+	    align-items: center;
+	    z-index: 5;
+		background-color: #fff;
+		width: 25px;
+		justify-content: center;
+	}
+	.right_slide {
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	    height: 100%;
+	    display: flex;
+	    align-items: center;
+	    z-index: 5;
+		background-color: #fff;
+		width: 25px;
+		justify-content: center;
 	}
 	.tovar_inner {
 		padding: 0;

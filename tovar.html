@@ -410,6 +410,7 @@
 					</div>
 					<div class="tovar_inner">
 						<div class="tovar_gallery">
+							<a href="#" class="left_slide"><img src="img/slide_left.svg" alt=""></a>
 							<div class="tovar_slide_1">
 								<div class="catalogin_slide">
 									<a data-fancybox="gallery" href="img/photo.jpg"><img src="img/photo.jpg" alt=""></a>
@@ -424,6 +425,7 @@
 									<a data-fancybox="gallery" href="img/photo3.jpg"><img src="img/photo3.jpg" alt=""></a>
 								</div>
 							</div>
+							<a href="#" class="right_slide"><img src="img/slide_right.svg" alt=""></a>
 							<div class="tovar_slide_2">
 								<div class="catalogin_trigger">
 									<img src="img/photo.jpg" alt="">
@@ -930,11 +932,22 @@
 	    $('.tovar_slide_1').slick({
 	        slidesToShow: 1,
 	        slidesToScroll: 1,
-	        arrows: true,
-	        fade: true,
-			prevArrow: $('.left_slide'),
-	        nextArrow: $('.right_slide'),
-	        asNavFor: '.tovar_slide_2'
+	        arrows: false,
+	        fade: false,
+	        asNavFor: '.tovar_slide_2',
+			responsive: [
+	            {
+	              breakpoint: 820,
+	              settings: {
+					arrows: true,
+					prevArrow: $('.left_slide'),
+			        nextArrow: $('.right_slide'),
+	              }
+	            }
+	            // You can unslick at a given breakpoint now by adding:
+	            // settings: "unslick"
+	            // instead of a settings object
+	        ]
 	    });
 	    $('.tovar_slide_2').slick({
 	        slidesToShow: 6,
