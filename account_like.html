@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Окна</title>
+	<title>Окна | Личный кабинет</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="vendor/foundation/css/foundation.css">
 	<link rel="stylesheet" href="vendor/foundation/css/app.css">
@@ -21,13 +21,13 @@
 					<a class="burger" data-toggle="offCanvas" href="#"><img src="img/burger.png" alt=""></a>
 					<div class="top_mobile_content">
 						<div class="header_log">
-							<a href="#" class="header_login">
+							<a href="#" class="header_login" data-open="exampleModal1">
 								<div class="header_login_img">
 									<img src="img/login.png" alt="">
 								</div>
 								<span>Вход</span>
 							</a>
-							<span>|</span>
+							<span class="header_log_line">|</span>
 							<a href="#" class="header_reg">
 								<span>Регистрация</span>
 							</a>
@@ -362,282 +362,27 @@
 				</div>
 			</div>
 		</header>
-		<section id="slide">
-			<div class="main_slide">
-				<div class="slider_inner slick-initialized">
-					<a href="#" class="slider_arrow arrow_left"><img src="img/slider_arrow_left.png" alt=""></a>
-					<div class="slider_content">
-						<div class="slide">
-							<img src="img/slide1.png" alt="">
-							<div class="slide_container">
-								<div class="slide_text">
-									<h2>Изготовление, установка и ремонт пластиковых окон и дверей в Якутске</h2>
-								</div>
-							</div>
-						</div>
-						<div class="slide">
-							<img src="img/slide1.png" alt="">
-						</div>
-						<div class="slide">
-							<img src="img/slide1.png" alt="">
-						</div>
-						<div class="slide">
-							<img src="img/slide1.png" alt="">
-						</div>
-						<div class="slide">
-							<img src="img/slide1.png" alt="">
-						</div>
-					</div>
-					<a href="#" class="slider_arrow arrow_right"><img src="img/slider_arrow_right.png" alt=""></a>
-				</div>
-			</div>
-		</section>
-		<section class="advan">
-			<div class="advan_inner">
-				<div class="advan_content">
-					<div class="advan_block">
-						<div class="advan_img">
-							<img src="img/advan_block_1.png" alt="">
-						</div>
-						<span>Удобная и быстрая доставка</span>
-					</div>
-					<div class="advan_block">
-						<div class="advan_img">
-							<img src="img/advan_block_2.png" alt="">
-						</div>
-						<span>Высокотехнологичное производство</span>
-					</div>
-					<div class="advan_block">
-						<div class="advan_img">
-							<img src="img/advan_block_3.png" alt="">
-						</div>
-						<span>ПВХ-конструкции любой сложности</span>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="main_catalog">
-			<div class="container">
-				<div class="main_catalog_inner">
-					<div class="section_title">
-						<h2>Каталог товаров</h2>
-					</div>
-					<div class="main_catalog_content">
-						<div class="main_catalog_block">
-							<div class="main_catalog_img">
-								<img src="img/okna_catalog_1.jpg" alt="">
-							</div>
-							<span>Комплектующие</span>
-							<a href="#"></a>
-						</div>
-						<div class="main_catalog_block">
-							<div class="main_catalog_img">
-								<img src="img/okna_catalog_2.jpg" alt="">
-							</div>
-							<span>Окна из ПВХ</span>
-							<a href="#"></a>
-						</div>
-						<div class="main_catalog_block">
-							<div class="main_catalog_img">
-								<img src="img/okna_catalog_3.jpg" alt="">
-							</div>
-							<span>Двери из ПВХ</span>
-							<a href="#"></a>
-						</div>
-						<div class="main_catalog_block">
-							<div class="main_catalog_img">
-								<img src="img/okna_catalog_4.jpg" alt="">
-							</div>
-							<span>Пластиковые откосы, подоконники</span>
-							<a href="#"></a>
-						</div>
-						<div class="main_catalog_block">
-							<div class="main_catalog_img">
-								<img src="img/okna_catalog_5.jpg" alt="">
-							</div>
-							<span>Стекло</span>
-							<a href="#"></a>
-						</div>
-						<div class="main_catalog_block">
-							<div class="main_catalog_img">
-								<img src="img/okna_catalog_6.jpg" alt="">
-							</div>
-							<span>Алюминиевый профиль</span>
-							<a href="#"></a>
-						</div>
-						<div class="main_catalog_block">
-							<div class="main_catalog_img">
-								<img src="img/okna_catalog_7.jpg" alt="">
-							</div>
-							<span>Монтажные товары</span>
-							<a href="#"></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="raschet">
-			<div class="raschet_wrap">
+		<section class="catalog">
+			<div class="catalog_wrap">
 				<div class="container">
-					<div class="raschet_inner_container">
-						<div class="raschet_inner">
-							<div class="raschet_title">
-								<h2>Расчет стоимости откоса окна</h2>
-							</div>
-							<form class="" action="index.html" method="post">
-								<div class="raschet_content">
-									<div class="raschet_block">
-										<span>Высота:</span>
-										<div class="raschet_button">
-											<div class="button_inner">
-												<input id="height_1" type="radio" name="height" value="1" checked>
-												<label for="height_1">1,5 м</label>
-											</div>
-											<div class="button_inner">
-												<input id="height_2" type="radio" name="height" value="2">
-												<label for="height_2">1,8 м</label>
-											</div>
-											<div class="button_inner">
-												<input id="height_3" type="radio" name="height" value="3">
-												<label for="height_3">2 м</label>
-											</div>
-											<div class="button_inner">
-												<input id="height_4" type="radio" name="height" value="4">
-												<label for="height_4">2,4 м</label>
-											</div>
-											<div class="button_inner">
-												<input id="height_5" type="radio" name="height" value="5">
-												<label for="height_5">3 м</label>
-											</div>
-										</div>
-									</div>
-									<div class="raschet_block">
-										<span>Длина:</span>
-										<div class="raschet_button">
-											<div class="button_inner">
-												<input id="width_1" type="radio" name="width" value="1" checked>
-												<label for="width_1">1,5 м</label>
-											</div>
-											<div class="button_inner">
-												<input id="width_2" type="radio" name="width" value="2">
-												<label for="width_2">1,8 м</label>
-											</div>
-											<div class="button_inner">
-												<input id="width_3" type="radio" name="width" value="3">
-												<label for="width_3">2 м</label>
-											</div>
-											<div class="button_inner">
-												<input id="width_4" type="radio" name="width" value="4">
-												<label for="width_4">2,4 м</label>
-											</div>
-											<div class="button_inner">
-												<input id="width_5" type="radio" name="width" value="5">
-												<label for="width_5">3 м</label>
-											</div>
-										</div>
-									</div>
-									<div class="raschet_block">
-										<span>Откос:</span>
-										<div class="raschet_button">
-											<div class="button_inner">
-												<input id="otkos_1" type="radio" name="otkos" value="1" checked>
-												<label for="otkos_1">до 600 мм</label>
-											</div>
-											<div class="button_inner">
-												<input id="otkos_2" type="radio" name="otkos" value="2">
-												<label for="otkos_2">до 450 мм</label>
-											</div>
-											<div class="button_inner">
-												<input id="otkos_3" type="radio" name="otkos" value="3">
-												<label for="otkos_3">до 300 мм</label>
-											</div>
-											<div class="button_inner">
-												<input id="otkos_4" type="radio" name="otkos" value="4">
-												<label for="otkos_4">до 225 мм</label>
-											</div>
-										</div>
-									</div>
-									<div class="raschet_info">
-										<div class="raschet_info_block">
-											<span>Ваше имя:</span>
-											<input type="text" name="name" value="">
-										</div>
-										<div class="raschet_info_block">
-											<span>Телефон:</span>
-											<input id="phone" type="text" name="phone" value="" placeholder="+7">
-										</div>
-										<div class="raschet_info_button">
-											<input type="submit" name="" value="Получить расчет">
-										</div>
-									</div>
-									<div class="raschet_check">
-										<div class="raschet_check_block">
-											<label for="check">
-												<div class="checkbox_block">
-													<input id="check" type="checkbox" name="" value="" required>
-													<span class="checkmark"></span>
-												</div>
-											    <div class="checkbox_text">
-											    	Согласен (-на) на обработку персональных данных
-											    </div>
-											</label>
-										</div>
-									</div>
-								</div>
-							</form>
-						</div>
-						<div class="raschet_img_inner">
-							<div class="raschet_img">
-								<img src="img/raschet.png" alt="">
-							</div>
-						</div>
+					<div class="breadcrumb">
+						<a href="#">Главная</a> - <a href="#">Личный кабинет</a>
 					</div>
-				</div>
-			</div>
-		</section>
-		<section class="service">
-			<div class="container">
-				<div class="service_inner">
-					<div class="section_title">
-						<h2>Услуги</h2>
+					<div class="page_title account_title">
+						<h1>Личный кабинет</h1>
+						<a href="#">Выйти из профиля</a>
 					</div>
-					<div class="service_content">
-						<div class="service_block">
-							<div class="service_img">
-								<img src="img/service_1.jpg" alt="">
-							</div>
-							<h3>Окна и двери</h3>
+					<form class="account_wrap" action="index.html" method="post">
+						<div class="account_tabs">
 							<ul>
-								<li><a href="#">Изготовление окон и дверей</a></li>
-								<li><a href="#">Установка окон и дверей</a></li>
-								<li><a href="#">Установка откосов и подоконников</a></li>
-								<li><a href="#">Установка сеток</a></li>
+								<li><a href="#">Личные данные</a></li>
+								<li><a href="#">Мои заказы</a></li>
+								<li><a href="#">Адрес доставки</a></li>
+								<li><a href="#" class="active"><img src="img/like_grey.svg" alt=""> Избранные товары</a></li>
 							</ul>
 						</div>
-						<div class="service_block">
-							<div class="service_img">
-								<img src="img/service_2.jpg" alt="">
-							</div>
-							<h3>Перегородки</h3>
-							<ul>
-								<li><a href="#">Изготовление перегородок</a></li>
-								<li><a href="#">Установка перегородок</a></li>
-								<li><a href="#">Лоджия и балконы</a></li>
-							</ul>
-						</div>
-						<div class="service_block">
-							<div class="service_img">
-								<img src="img/service_3.jpg" alt="">
-							</div>
-							<h3>Ремонт</h3>
-							<ul>
-								<li><a href="#">Замена стеклопакета</a></li>
-								<li><a href="#">Замена резинок</a></li>
-								<li><a href="#">Регулировка изделий из ПВХ</a></li>
-								<li><a href="#">Перепенка изделий из ПВХ</a></li>
-							</ul>
-						</div>
-					</div>
+						
+					</form>
 				</div>
 			</div>
 		</section>
@@ -708,32 +453,34 @@
 					</div>
 					<div class="footer_bottom_block bottom_block_3">
 						<p>2019 © Окна К. ИП Косолапов В. Н
-Продажа и установка пластиковых окон и дверей в Якутске</p>
+							Продажа и установка пластиковых окон и дверей в Якутске</p>
 					</div>
 				</div>
 				<div class="footer_mobile">
 					<div class="footer_mobile_content">
 						<span>2019 © Окна К. ИП Косолапов В. Н<br>
-Продажа и установка пластиковых окон
-и дверей в Якутске</span>
+						Продажа и установка пластиковых окон
+						и дверей в Якутске</span>
 					</div>
 				</div>
 			</div>
 		</footer>
-		<div class="off-canvas position-left" id="offCanvas" data-off-canvas>
-			<ul class="vertical menu">
-				<li>
-					<a href="#" data-toggle="offCanvas"><img src="img/close.png" alt=""></a>
-					<a href="tel:+74112241616">+ 7 (4112) 24-16-16</a>
-				</li>
-				<li><a href="#" class="active">Каталог товаров</a></li>
-				<li><a href="#">Услуги</a></li>
-				<li><a href="#">Оплата и доставка</a></li>
-				<li><a href="#">Информация</a></li>
-				<li><a href="#">Работы</a></li>
-				<li><a href="#">Партнёры</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
+		<div class="header_canvas">
+			<div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+				<ul class="vertical menu">
+					<li>
+						<a href="#" data-toggle="offCanvas"><img src="img/close.png" alt=""></a>
+						<a href="tel:+74112241616">+ 7 (4112) 24-16-16</a>
+					</li>
+					<li><a href="#" class="active">Каталог товаров</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Оплата и доставка</a></li>
+					<li><a href="#">Информация</a></li>
+					<li><a href="#">Работы</a></li>
+					<li><a href="#">Партнёры</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
 		</div>
 		<script src="vendor/foundation/js/vendor/jquery.js"></script>
 		<script src="vendor/foundation/js/vendor/what-input.js"></script>
@@ -742,31 +489,70 @@
 		<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
 		<script src="vendor/jquery.maskedinput.js"></script>
 		<script type="text/javascript">
-		$('.slider_content').slick({
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			centerMode: true,
-			focusOnSelect: true,
-			arrows: false,
-			dots: true,
-			responsive: [
-		    {
-		      breakpoint: 568,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1,
-				dots: false,
-				arrows: true,
-				prevArrow: $('.arrow_left'),
-				nextArrow: $('.arrow_right'),
-		      }
-		    }
-		  ]
-	  	});
-		$("#offCanvasLeft").foundation("open", $("#offCanvasLeft"));
-	    jQuery(function($){
-		 $("#phone").mask("+7 (999) 999-9999");
+		jQuery(document).ready(function(){
+			$('[data-quantity="plus"]').on("click",function(e){
+		        // Stop acting like a button
+		        e.preventDefault();
+		        // Get the field name
+		        fieldName = $(this).attr('data-field');
+		        // Get its current value
+		        var currentVal = parseInt($('input[name='+fieldName+']').val());
+		        // If is not undefined
+		        if (!isNaN(currentVal)) {
+		            // Increment
+		            $('input[name='+fieldName+']').val(currentVal + 1);
+		        } else {
+		            // Otherwise put a 0 there
+		            $('input[name='+fieldName+']').val(0);
+		        }
+		        if (currentVal == 0) {
+					$(this).parents(".plus-minus-input").find(".minus").removeClass("disabled");
+		        }
+		    });
+		    // This button will decrement the value till 0
+		    $('[data-quantity="minus"]').click(function(e) {
+		        // Stop acting like a button
+		        e.preventDefault();
+		        // Get the field name
+		        fieldName = $(this).attr('data-field');
+		        // Get its current value
+		        var currentVal = parseInt($('input[name='+fieldName+']').val());
+
+
+		        if (currentVal == 1) {
+					$(".minus").addClass("disabled");
+		        }
+		        // If it isn't undefined or its greater than 0
+		        if (!isNaN(currentVal) && currentVal > 1) {
+		            // Decrement one
+		            $('input[name='+fieldName+']').val(currentVal - 1);
+		        } else {
+		            // Otherwise put a 0 there
+		            $('input[name='+fieldName+']').val(0);
+		        }
+		    });
 		});
+		$('img[src$=".svg"]').each(function() {
+		    var $img = jQuery(this);
+		    var imgURL = $img.attr('src');
+		    var attributes = $img.prop("attributes");
+
+		    $.get(imgURL, function(data) {
+		      // Get the SVG tag, ignore the rest
+		      var $svg = jQuery(data).find('svg');
+
+		      // Remove any invalid XML tags
+		      $svg = $svg.removeAttr('xmlns:a');
+
+		      // Loop through IMG attributes and apply on SVG
+		      $.each(attributes, function() {
+		        $svg.attr(this.name, this.value);
+		      });
+
+		      // Replace IMG with SVG
+		      $img.replaceWith($svg);
+		    }, 'xml');
+		  });
 		</script>
 	</div>
 </body>
