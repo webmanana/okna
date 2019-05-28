@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Окна | Личный кабинет</title>
+	<title>Окна | Работы</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="vendor/foundation/css/foundation.css">
 	<link rel="stylesheet" href="vendor/foundation/css/app.css">
@@ -366,39 +366,81 @@
 			<div class="catalog_wrap">
 				<div class="container">
 					<div class="breadcrumb">
-						<a href="#">Главная</a> - <a href="#">Личный кабинет</a>
+						<a href="#">Главная</a> - <a href="#">Работы</a>
 					</div>
-					<div class="page_title account_title">
-						<h1>Личный кабинет</h1>
-						<a href="#">Выйти из профиля</a>
+					<div class="page_title">
+						<h1>Работы</h1>
 					</div>
-					<div class="account_tabs">
-						<ul>
-							<li><a href="#">Личные данные</a></li>
-							<li><a href="#">Мои заказы</a></li>
-							<li><a href="#">Адрес доставки</a></li>
-							<li><a href="#" class="active"><img src="img/like_grey.svg" alt=""> Избранные товары</a></li>
-						</ul>
-					</div>
-					<div class="catalog_element_block_inner">
-						<div class="like_element_block">
-							<div class="like_element_content">
-								<div class="catalog_element_meta_inner">
-									<a href="#" class="catalog_element_meta_like">
-										<img src="img/like.svg" alt="">
-									</a>
+					<div class="page_inner">
+						<div class="work_content">
+							<p>Здесь представлены наши выполненные работы. Разнообразный и богатый опыт повседневной работы по формированию позиции позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Таким образом начало повседневной работы по формированию позиции играет важную роль в формировании дальнейших направлений развития.</p>
+							<div class="slide_inner">
+								<div class="slide_desc">
+									<h3>О проекте</h3>
+									<p>Теплое остекление балкона в частном доме. Работа заняла одну неделю включая изготовление и все этапы работы. Плюс еще какой то добавочный текст для описания проекта. </p>
+									<p>Таким образом начало повседневной работы по формированию позиции играет важную роль в формировании дальнейших направлений.</p>
 								</div>
-								<div class="catalog_element_img">
-									<img src="img/catalog_7.jpg" alt="">
+								<div class="slide_wrap">
+									<div class="slide_content">
+										<div class="slide_big">
+											<img src="img/slide_big.jpg" alt="">
+										</div>
+										<div class="slide_big">
+											<img src="img/slide_big.jpg" alt="">
+										</div>
+										<div class="slide_big">
+											<img src="img/slide_big.jpg" alt="">
+										</div>
+										<div class="slide_big">
+											<img src="img/slide_big.jpg" alt="">
+										</div>
+										<div class="slide_big">
+											<img src="img/slide_big.jpg" alt="">
+										</div>
+										<div class="slide_big">
+											<img src="img/slide_big.jpg" alt="">
+										</div>
+										<div class="slide_big">
+											<img src="img/slide_big.jpg" alt="">
+										</div>
+										<div class="slide_big">
+											<img src="img/slide_big.jpg" alt="">
+										</div>
+									</div>
 								</div>
-								<a href="#" class="catalog_element_cat">Двухстворчатые окна</a>
-								<a href="#"><h5>Однокамерный энергосберегающий стеклопакет Euroline 1600х1500</h5></a>
-								<div class="catalog_element_price_inner">
-									<span class="catalog_element_price">9 500 ₽</span>
-									<span class="catalog_element_col_not">Нет в наличии</span>
+							</div>
+							<div class="slide_arrow">
+								<a href="#" class="work_left"><img src="img/work_left.svg" alt=""></a>
+								<a href="#" class="work_right"><img src="img/work_right.svg" alt=""></a>
+							</div>
+							<div class="slide_small_content">
+								<div class="slide_small_block">
+									<img src="img/slide_small_1.jpg" alt="">
+								</div>
+								<div class="slide_small_block">
+									<img src="img/slide_small_2.jpg" alt="">
+								</div>
+								<div class="slide_small_block">
+									<img src="img/slide_small_3.jpg" alt="">
+								</div>
+								<div class="slide_small_block">
+									<img src="img/slide_small_4.jpg" alt="">
+								</div>
+								<div class="slide_small_block">
+									<img src="img/slide_small_5.jpg" alt="">
+								</div>
+								<div class="slide_small_block">
+									<img src="img/slide_small_6.jpg" alt="">
+								</div>
+								<div class="slide_small_block">
+									<img src="img/slide_small_7.jpg" alt="">
+								</div>
+								<div class="slide_small_block">
+									<img src="img/slide_small_7.jpg" alt="">
 								</div>
 							</div>
 						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -505,49 +547,58 @@
 		<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
 		<script src="vendor/jquery.maskedinput.js"></script>
 		<script type="text/javascript">
-		jQuery(document).ready(function(){
-			$('[data-quantity="plus"]').on("click",function(e){
-		        // Stop acting like a button
-		        e.preventDefault();
-		        // Get the field name
-		        fieldName = $(this).attr('data-field');
-		        // Get its current value
-		        var currentVal = parseInt($('input[name='+fieldName+']').val());
-		        // If is not undefined
-		        if (!isNaN(currentVal)) {
-		            // Increment
-		            $('input[name='+fieldName+']').val(currentVal + 1);
-		        } else {
-		            // Otherwise put a 0 there
-		            $('input[name='+fieldName+']').val(0);
-		        }
-		        if (currentVal == 0) {
-					$(this).parents(".plus-minus-input").find(".minus").removeClass("disabled");
-		        }
-		    });
-		    // This button will decrement the value till 0
-		    $('[data-quantity="minus"]').click(function(e) {
-		        // Stop acting like a button
-		        e.preventDefault();
-		        // Get the field name
-		        fieldName = $(this).attr('data-field');
-		        // Get its current value
-		        var currentVal = parseInt($('input[name='+fieldName+']').val());
-
-
-		        if (currentVal == 1) {
-					$(".minus").addClass("disabled");
-		        }
-		        // If it isn't undefined or its greater than 0
-		        if (!isNaN(currentVal) && currentVal > 1) {
-		            // Decrement one
-		            $('input[name='+fieldName+']').val(currentVal - 1);
-		        } else {
-		            // Otherwise put a 0 there
-		            $('input[name='+fieldName+']').val(0);
-		        }
-		    });
-		});
+		$('.slide_content').slick({
+	        slidesToShow: 1,
+	        slidesToScroll: 1,
+			arrows: true,
+			prevArrow: $('.work_left'),
+			nextArrow: $('.work_right'),
+	        fade: true,
+	        asNavFor: '.slide_small_content'
+	    });
+	    $('.slide_small_content').slick({
+	        slidesToShow: 7,
+	        slidesToScroll: 1,
+	        asNavFor: '.slide_content',
+	        centerMode: false,
+	        focusOnSelect: true,
+	        arrows: false,
+	        responsive: [
+	            {
+	              breakpoint: 1400,
+	              settings: {
+	                slidesToShow: 6,
+	              }
+	            },
+	            {
+	              breakpoint: 1240,
+	              settings: {
+	                slidesToShow: 6,
+	              }
+	            },
+	            {
+	              breakpoint: 920,
+	              settings: {
+	                slidesToShow: 4,
+	              }
+	            },
+	            {
+	              breakpoint: 568,
+	              settings: {
+	                slidesToShow: 3,
+	              }
+	            },
+	            {
+	              breakpoint: 480,
+	              settings: {
+	                slidesToShow: 2,
+	              }
+	            }
+	            // You can unslick at a given breakpoint now by adding:
+	            // settings: "unslick"
+	            // instead of a settings object
+	        ]
+	    });
 		$('img[src$=".svg"]').each(function() {
 		    var $img = jQuery(this);
 		    var imgURL = $img.attr('src');
