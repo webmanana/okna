@@ -232,6 +232,10 @@ a {
 	display: flex;
 	flex-direction: row;
 }
+.header_menu_inner div ul {
+	display: flex;
+	flex-direction: column;
+}
 .header_menu_inner ul li a {
 	display: flex;
 	padding: 17px 15px;
@@ -2192,6 +2196,9 @@ input[type=number] {
     flex-direction: column;
     justify-content: center;
 }
+.slide_big_img {
+	width: 75%;
+}
 .slide_desc h3 {
 	font-size: 24px;
 	color: #242424;
@@ -2214,7 +2221,7 @@ input[type=number] {
 	padding-top: 18px;
 }
 .slide_wrap {
-	width: 75%;
+	width: 100%;
 }
 .slide_small_block {
 	position: relative;
